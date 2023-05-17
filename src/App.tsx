@@ -1,7 +1,10 @@
 import Container from './Layout/Container'
+import Header from './Layout/Header'
 
 function App() {
-  return (<Container>Oi</Container>)
+  return (<Container>
+    <Header />
+  </Container>)
 }
 
 export default App

@@ -5,7 +5,7 @@ const Container = styled.div`
     height: 100%;
     margin: 0 auto;
     font-size: 1.4rem;
-    padding: 0 1rem;
+    padding: 5rem 1rem;
 `;
 
 export default Container;
