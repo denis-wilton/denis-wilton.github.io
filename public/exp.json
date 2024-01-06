@@ -2,31 +2,32 @@
   "updatedAt": "2024-01-03T15:58:00-03:00",
   "education": [
     {
+      "name": "Universidade Estácio de Sá",
+      "course": "Postgraduate Degree in Software Engineering",
+      "location": "Distance Learning",
+      "date": "2023 until 2024 (in course)",
+      "type": "Postgraduate"
+    },
+    {
       "name": "Federal University of Mato Grosso",
       "course": "Bachelor's Degree in Information Systems",
       "location": "Cuiabá, MT - Brazil",
-      "date": "2021 until 2025",
+      "date": "2021 until 2025 (in course)",
       "type": "Bachelor's Degree"
     },
     {
       "name": "Universidade Paulista",
       "course": "Bachelor's Degree in Chemistry",
       "location": "Distance Learning",
-      "date": "2018 until 2022",
+      "date": "2018 until 2022 (complete)",
       "type": "Bachelor's Degree"
-    },
-    {
-      "name": "Universidade Estácio de Sá",
-      "course": "Postgraduate Degree in Software Engineering",
-      "location": "Distance Learning",
-      "date": "2023 until 2024",
-      "type": "Postgraduate"
     }
   ],
   "data": [
     {
       "id": "1",
       "company": "Nelogica",
+      "website": "https://nelogica.com.br",
       "role": [
         { "name": "Software Developer I", "time": "10 months" },
         { "name": "Software Developer II", "time": "13 months" },
@@ -42,6 +43,7 @@
     {
       "id": "2",
       "company": "Ábaco",
+      "website": "https://www.abaco.com.br/",
       "role": [
         { "name": "GeneXus Developer Intern", "time": "3 months" },
         { "name": "GeneXus Developer Trainee", "time": "6 months" },

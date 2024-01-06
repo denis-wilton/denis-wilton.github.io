@@ -62,8 +62,8 @@ export default function Header() {
           <Circle />
         </FloatingImage>
       </CircleContainer>
-      <Name>{NAME}</Name>
-      <Role>{ROLE}</Role>
+      <Name className="font-bold">{NAME}</Name>
+      <Role className="transform translate-x-5">{ROLE}</Role>
     </Wrapper>
   );
 }

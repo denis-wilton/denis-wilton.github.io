@@ -16,13 +16,13 @@ export default function Corner(props: {
   topRight: ReactNode;
 }) {
   return (
-    <Wrapper>
+    <Wrapper id="corner-wrapper">
       <Layer>{props.children}</Layer>
       <Layer
         style={{
           alignSelf: "start",
           justifySelf: "end",
-          transform: `translateY(-80%) translateX(40%)`,
+          transform: `translateY(-50%) translateX(50%)`,
         }}
       >
         {props.topRight}

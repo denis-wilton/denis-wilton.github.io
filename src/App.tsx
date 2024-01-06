@@ -1,14 +1,10 @@
 import { styled } from "styled-components";
 import Corner from "./Components/Corner";
 import Container from "./Layout/Container";
-import FloatingImage from "./Layout/FloatingImage";
 import Header from "./Layout/Header";
 import Skills from "./Layout/Skills";
-import Computer from "./assets/Computer.svg";
-import { Component, useEffect, useState } from "react";
-import CompanyExperience from "./Components/CompanyExperience";
-import GradRaw from "./assets/Grad.svg?react";
-import PosRaw from "./assets/Pos.svg?react";
+import Computer from "./assets/Computer.svg?react";
+import { useEffect, useState } from "react";
 
 const DetailBar = () => (
   <div className="bg-primary h-[12px] w-[230px] rounded-[20px] transform translate-x-[-50px] mt-5 mb-[-7.5px]" />
@@ -22,6 +18,7 @@ type JSONData = {
     location: string;
     description: string;
     date: string;
+    website: string;
     role: {
       name: string;
       time: string;
@@ -105,45 +102,70 @@ function App() {
       <Header />
       <Skills />
 
-      <Section title="Experience">
-        {data ? (
-          <div className="flex flex-col gap-10">
-            {data.map((job) => (
-              <div className="flex flex-col">
-                <span className="font-semibold text-neutral-900">
-                  {job.company}
-                  {" | "}
-                  <span className="font-normal text-primary">
-                    {job.role.toReversed()[0].name}
-                  </span>
-                </span>
-                <span className="text-neutral-500">{job.location}</span>
-                <div className="py-3 px-5 bg-primary/20 text-primary rounded-md mt-2">
-                  {job.role
-                    .toReversed()
-                    .slice(0, -1)
-                    .map((role) => (
-                      <>
-                        <div>
-                          Promoted to{" "}
-                          <span className="font-bold">{role.name}</span>
-                        </div>
-                      </>
-                    ))}
-                  <div>
-                    Joined as{" "}
-                    <span className="font-bold">
-                      {job.role.toReversed().at(-1)!.name}
+      <Corner
+        topRight={
+          <div className="w-[200px] h-[200px]">
+            <Computer className="w-full h-full"></Computer>
+          </div>
+        }
+      >
+        <Section title="Experience">
+          {data ? (
+            <div className="flex flex-col gap-10">
+              {data.map((job) => (
+                <div className="flex flex-col">
+                  <div className="flex flex-row justify-between">
+                    <span className="font-semibold text-neutral-900">
+                      {job.company}
+                      {" | "}
+                      <span className="font-normal text-primary">
+                        {job.role.toReversed()[0].name}
+                      </span>
+                    </span>
+
+                    <span
+                      className="text-neutral-400 underline cursor-pointer hover:text-primary"
+                      onClick={() => window.open(job.website, "_blank")}
+                    >
+                      Visit website
                     </span>
                   </div>
+                  <div className="flex flex-row justify-start gap-2 items-center">
+                    <span className="text-neutral-500">{job.location}</span>
+                    <span className="text-[1rem] text-neutral-400 transform translate-y-[-0.5px]">
+                      |
+                    </span>
+                    <span className="text-[1rem] text-neutral-400 transform translate-y-[-0.5px]">
+                      {job.date}
+                    </span>
+                  </div>
+                  <div className="py-3 px-5 bg-primary/20 text-primary rounded-md mt-2">
+                    {job.role
+                      .toReversed()
+                      .slice(0, -1)
+                      .map((role) => (
+                        <>
+                          <div>
+                            Promoted to{" "}
+                            <span className="font-bold">{role.name}</span>
+                          </div>
+                        </>
+                      ))}
+                    <div>
+                      Joined as{" "}
+                      <span className="font-bold">
+                        {job.role.toReversed().at(-1)!.name}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="animate-pulse">Loading...</div>
-        )}
-      </Section>
+              ))}
+            </div>
+          ) : (
+            <div className="animate-pulse">Loading...</div>
+          )}
+        </Section>
+      </Corner>
 
       <Section title="Articles and Projects">
         <div className="flex flex-col gap-0 justify-between">
