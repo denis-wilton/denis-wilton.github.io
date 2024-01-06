@@ -1,5 +1,13 @@
 {
   "updatedAt": "2024-01-03T15:58:00-03:00",
+  "articles": [
+    {
+      "name": "O uso do RxJS em uma aplicação robusta baseada em eventos",
+      "source": "TabNews",
+      "url": "https://www.tabnews.com.br/dazevedo/o-uso-do-rxjs-em-uma-aplicacao-robusta-baseada-em-eventos",
+      "date": "jul/2022"
+    }
+  ],
   "education": [
     {
       "name": "Universidade Estácio de Sá",

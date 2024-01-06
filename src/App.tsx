@@ -30,6 +30,12 @@ type JSONData = {
     course: string;
     date: string;
   }[];
+  articles: {
+    name: string;
+    url: string;
+    source: string;
+    date: string;
+  }[];
 };
 
 const Section = (props: { children: any; title: string }) => (
@@ -88,12 +94,14 @@ function App() {
   const [education, setEducation] = useState<null | JSONData["education"]>(
     null
   );
+  const [articles, setArticles] = useState<null | JSONData["articles"]>(null);
 
   useEffect(() => {
     (async () => {
       const d = (await (await fetch(`./exp.json`)).json()) as JSONData;
       setData(d.data);
       setEducation(d.education);
+      setArticles(d.articles);
     })();
   }, []);
 
@@ -113,9 +121,9 @@ function App() {
           {data ? (
             <div className="flex flex-col gap-10">
               {data.map((job) => (
-                <div className="flex flex-col">
+                <div className="flex flex-col group">
                   <div className="flex flex-row justify-between">
-                    <span className="font-semibold text-neutral-900">
+                    <span className="font-semibold text-neutral-900 group-hover:text-black  group-hover:animate-pulse">
                       {job.company}
                       {" | "}
                       <span className="font-normal text-primary">
@@ -123,12 +131,13 @@ function App() {
                       </span>
                     </span>
 
-                    <span
+                    <a
                       className="text-neutral-400 underline cursor-pointer hover:text-primary"
-                      onClick={() => window.open(job.website, "_blank")}
+                      href={job.website}
+                      target="_blank"
                     >
                       Visit website
-                    </span>
+                    </a>
                   </div>
                   <div className="flex flex-row justify-start gap-2 items-center">
                     <span className="text-neutral-500">{job.location}</span>
@@ -169,7 +178,22 @@ function App() {
 
       <Section title="Articles and Projects">
         <div className="flex flex-col gap-0 justify-between">
-          <span className="animate-pulse text-primary">Coming soon...</span>
+          {articles ? (
+            articles.map((article) => (
+              <div
+                onClick={() => window.open(article.url, "_blank")}
+                className="flex flex-col bg-neutral-200 hover:bg-primary/20 py-1 px-5 rounded-md hover:animate-pulse cursor-pointer"
+              >
+                <span className="font-bold">{article.name}</span>
+                <span>
+                  {article.source} -{" "}
+                  <span className="text-neutral-400">{article.date}</span>
+                </span>
+              </div>
+            ))
+          ) : (
+            <div className="animate-pulse">Loading...</div>
+          )}
         </div>
       </Section>
 
