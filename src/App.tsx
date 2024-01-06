@@ -127,7 +127,7 @@ function App() {
                       {job.company}
                       {" | "}
                       <span className="font-normal text-primary">
-                        {job.role.toReversed()[0].name}
+                        {[...job.role].reverse()[0].name}
                       </span>
                     </span>
 
@@ -149,8 +149,8 @@ function App() {
                     </span>
                   </div>
                   <div className="py-3 px-5 bg-primary/20 text-primary rounded-md mt-2">
-                    {job.role
-                      .toReversed()
+                    {[...job.role]
+                      .reverse()
                       .slice(0, -1)
                       .map((role) => (
                         <>
@@ -163,7 +163,7 @@ function App() {
                     <div>
                       Joined as{" "}
                       <span className="font-bold">
-                        {job.role.toReversed().at(-1)!.name}
+                        {[...job.role].reverse().at(-1)!.name}
                       </span>
                     </div>
                   </div>

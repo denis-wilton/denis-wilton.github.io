@@ -100,7 +100,7 @@ export default function CompanyExperience(props: { company: Experience }) {
         <Company.Location>|</Company.Location>
         <Company.Date>{props.company.date}</Company.Date>
       </div>
-      {props.company.role.toReversed().map((role, index) => {
+      {[...props.company.role].reverse().map((role, index) => {
         return (
           <Company.Role style={getStyle(index)}>
             {role.name} ({role.time})

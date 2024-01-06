@@ -1,0 +1,66 @@
+{
+  "updatedAt": "2024-01-03T15:58:00-03:00",
+  "articles": [
+    {
+      "name": "O uso do RxJS em uma aplicação robusta baseada em eventos",
+      "source": "TabNews",
+      "url": "https://www.tabnews.com.br/dazevedo/o-uso-do-rxjs-em-uma-aplicacao-robusta-baseada-em-eventos",
+      "date": "jul/2022"
+    }
+  ],
+  "education": [
+    {
+      "name": "Universidade Estácio de Sá",
+      "course": "Postgraduate Degree in Software Engineering",
+      "location": "Distance Learning",
+      "date": "2023 until 2024 (in course)",
+      "type": "Postgraduate"
+    },
+    {
+      "name": "Federal University of Mato Grosso",
+      "course": "Bachelor's Degree in Information Systems",
+      "location": "Cuiabá, MT - Brazil",
+      "date": "2021 until 2025 (in course)",
+      "type": "Bachelor's Degree"
+    },
+    {
+      "name": "Universidade Paulista",
+      "course": "Bachelor's Degree in Chemistry",
+      "location": "Distance Learning",
+      "date": "2018 until 2022 (complete)",
+      "type": "Bachelor's Degree"
+    }
+  ],
+  "data": [
+    {
+      "id": "1",
+      "company": "Nelogica",
+      "website": "https://nelogica.com.br",
+      "role": [
+        { "name": "Software Developer I", "time": "10 months" },
+        { "name": "Software Developer II", "time": "13 months" },
+        {
+          "name": "Software Developer Beta Lead",
+          "time": "2 months and counting"
+        }
+      ],
+      "description": "I work on improving and maintaining a trading web platform, with the goal of replicating a complex desktop application in the browser using Vue 3. My daily tasks include making tactical decisions regarding project launches, coding solutions, analyzing the impacts on the rest of the application, reviewing my colleagues' code and, of course, fixing bugs.",
+      "location": "Porto Alegre, RS - Brazil (Remote)",
+      "date": "jun/2021 until now"
+    },
+    {
+      "id": "2",
+      "company": "Ábaco",
+      "website": "https://www.abaco.com.br/",
+      "role": [
+        { "name": "GeneXus Developer Intern", "time": "3 months" },
+        { "name": "GeneXus Developer Trainee", "time": "6 months" },
+        { "name": "GeneXus Developer Jr.", "time": "9 months" },
+        { "name": "GeneXus Developer Mid.", "time": "3 months" }
+      ],
+      "description": "At Ábaco, I worked with a low-code software called GeneXus to develop Public Sector Accounting software. This was my first experience as a software developer, where I learned how to collaborate with other developers using Git and participated in daily meetings. I began my journey as an intern and received a promotion to Trainee Developer within three months, eventually advancing to the position of Junior Developer.",
+      "location": "Cuiabá, MT - Brazil (Hybrid)",
+      "date": "jun/2019 until jun/2021"
+    }
+  ]
+}
