@@ -13,7 +13,7 @@
       "name": "Universidade Estácio de Sá",
       "course": "Postgraduate Degree in Software Engineering",
       "location": "Distance Learning",
-      "date": "2023 until 2024 (in course)",
+      "date": "2023 until 2024 (complete)",
       "type": "Postgraduate"
     },
     {
@@ -40,7 +40,7 @@
         { "name": "Software Developer I", "time": "10 months" },
         { "name": "Software Developer II", "time": "13 months" },
         {
-          "name": "Software Developer Beta Lead",
+          "name": "Software Developer III",
           "time": "2 months and counting"
         }
       ],
