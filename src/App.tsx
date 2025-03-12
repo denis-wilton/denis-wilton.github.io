@@ -98,7 +98,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const d = (await (await fetch(`./exp.json`)).json()) as JSONData;
+      const d = (await (await fetch(`./exp.json?d=${Date.now()}`)).json()) as JSONData;
       setData(d.data);
       setEducation(d.education);
       setArticles(d.articles);
