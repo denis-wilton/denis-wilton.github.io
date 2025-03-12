@@ -33,6 +33,17 @@
   ],
   "data": [
     {
+      "id": "0",
+      "company": "CI&T",
+      "website": "https://ciandt.com/br/pt-br/home",
+      "role": [
+        { "name": "Mid-level Software Developer", "time": "6 months and counting" }
+      ],
+      "description": ".",
+      "location": "Campinas, SP - Brazil (Remote)",
+      "date": "sep/2024 until now"
+    },
+    {
       "id": "1",
       "company": "Nelogica",
       "website": "https://nelogica.com.br",
@@ -41,12 +52,12 @@
         { "name": "Software Developer II", "time": "13 months" },
         {
           "name": "Software Developer III",
-          "time": "2 months and counting"
+          "time": "11 months"
         }
       ],
       "description": "I work on improving and maintaining a trading web platform, with the goal of replicating a complex desktop application in the browser using Vue 3. My daily tasks include making tactical decisions regarding project launches, coding solutions, analyzing the impacts on the rest of the application, reviewing my colleagues' code and, of course, fixing bugs.",
       "location": "Porto Alegre, RS - Brazil (Remote)",
-      "date": "jun/2021 until now"
+      "date": "jun/2021 until sep/2024"
     },
     {
       "id": "2",
