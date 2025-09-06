@@ -34,17 +34,28 @@
   "data": [
     {
       "id": "0",
-      "company": "CI&T",
-      "website": "https://ciandt.com/br/pt-br/home",
+      "company": "Dattos",
+      "website": "https://dattos.com.br/",
       "role": [
-        { "name": "Mid-level Software Developer", "time": "6 months and counting" }
+        { "name": "Senior Software Developer", "time": "1 months and counting" }
       ],
       "description": ".",
-      "location": "Campinas, SP - Brazil (Remote)",
-      "date": "sep/2024 until now"
+      "location": "São Paulo, SP - Brazil (Remote)",
+      "date": "sep/2025 until now"
     },
     {
       "id": "1",
+      "company": "CI&T",
+      "website": "https://ciandt.com/br/pt-br/home",
+      "role": [
+        { "name": "Mid-level Software Developer", "time": "12 months" }
+      ],
+      "description": ".",
+      "location": "Campinas, SP - Brazil (Remote)",
+      "date": "sep/2024 until sep/2025"
+    },
+    {
+      "id": "2",
       "company": "Nelogica",
       "website": "https://nelogica.com.br",
       "role": [
@@ -60,7 +71,7 @@
       "date": "jun/2021 until sep/2024"
     },
     {
-      "id": "2",
+      "id": "3",
       "company": "Ábaco",
       "website": "https://www.abaco.com.br/",
       "role": [
