@@ -53,7 +53,7 @@ const Role = styled.p`
 
 export default function Header() {
   const NAME = "Denis Wilton";
-  const ROLE = "Web developer";
+  const ROLE = "Software Engineer";
 
   return (
     <Wrapper>

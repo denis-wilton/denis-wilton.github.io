@@ -18,7 +18,7 @@ const Others = styled.p`
 `;
 
 export default function Skills() {
-  const SKILLS = ["Typescript", "Vue", "React"];
+  const SKILLS = ["Typescript", "Vue", "React", "C#", "Python", "RabbitMQ"];
 
   const emphaticSkill = SKILLS[0];
   const otherSkills = SKILLS.slice(1);
