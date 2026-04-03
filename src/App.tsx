@@ -81,10 +81,31 @@ const Contact = styled.div`
     color: #6fbf4a;
     line-height: normal;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     &:hover {
       color: #9fef7a;
       text-decoration: underline;
       cursor: pointer;
+    }
+  }
+
+  span.linkedin {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+
+    a {
+      color: #6fbf4a;
+      text-decoration: none;
+
+      &:hover {
+        color: #9fef7a;
+        text-decoration: underline;
+      }
     }
   }
 `;
@@ -167,6 +188,9 @@ function App() {
                       </span>
                     </div>
                   </div>
+                  {job.description && job.description !== "." && (
+                    <p className="text-neutral-600 text-sm mt-2">{job.description}</p>
+                  )}
                 </div>
               ))}
             </div>
@@ -221,7 +245,8 @@ function App() {
 
       <Contact>
         <span className="call">Send me an e-mail</span>
-        <span className="mail">deniswiltonpa@gmail.com</span>
+        <span className="mail"><a href="mailto:deniswiltonpa@gmail.com">deniswiltonpa@gmail.com</a></span>
+        <span className="linkedin"><a href="https://linkedin.com/in/deniswiltonpa" target="_blank" rel="noopener noreferrer">linkedin.com/in/deniswiltonpa</a></span>
       </Contact>
     </Container>
   );

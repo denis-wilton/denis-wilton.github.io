@@ -39,7 +39,7 @@
       "role": [
         { "name": "Senior Software Developer", "time": "1 months and counting" }
       ],
-      "description": ".",
+      "description": "PDF AI Integration: Built end-to-end AI-powered PDF data extraction, integrating GPT-4.1 agents with the platform's ETL pipeline to automate document processing for financial reconciliation. Full-Stack Multi-Repository Development: Delivered features spanning 4 repositories (Vue 2.7 frontend, C#/.NET backend, Python microservices, and messaging infrastructure), owning the full lifecycle from PRD to production. Event-Driven Architecture: Implemented RabbitMQ-based messaging between .NET and Python services, enabling asynchronous processing for matching execution and AI agent orchestration.",
       "location": "São Paulo, SP - Brazil (Remote)",
       "date": "sep/2025 until now"
     },
@@ -50,7 +50,7 @@
       "role": [
         { "name": "Mid-level Software Developer", "time": "12 months" }
       ],
-      "description": ".",
+      "description": "Worked on a logistics software for a large international beverage company, using React and TypeScript.",
       "location": "Campinas, SP - Brazil (Remote)",
       "date": "sep/2024 until sep/2025"
     },
